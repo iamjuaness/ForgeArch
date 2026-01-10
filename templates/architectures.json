@@ -1,0 +1,603 @@
+{
+  "backend-api": {
+    "name": "Backend API (REST)",
+    "description": "RESTful API with layered architecture",
+    "structure": [
+      "src/controllers",
+      "src/services",
+      "src/models",
+      "src/db/migrations",
+      "src/routes",
+      "src/middleware",
+      "tests/unit",
+      "tests/integration",
+      "docs/api"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      ".env.example": "backend"
+    }
+  },
+  "frontend-react": {
+    "name": "React Frontend",
+    "description": "Modern React app structure",
+    "structure": [
+      "src/components",
+      "src/pages",
+      "src/hooks",
+      "src/utils",
+      "src/styles",
+      "public",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      ".env.example": "frontend"
+    }
+  },
+  "monorepo": {
+    "name": "Monorepo",
+    "description": "Multi-package monorepo structure",
+    "structure": [
+      "apps/backend",
+      "apps/frontend",
+      "packages/shared-ui",
+      "packages/utils",
+      "tools/scripts"
+    ],
+    "files": {
+      ".gitignore": "monorepo",
+      "package.json": "monorepo-root"
+    }
+  },
+  "backend-graphql": {
+    "name": "Backend GraphQL",
+    "description": "GraphQL API with schema-first approach and resolvers",
+    "structure": [
+      "src/schema",
+      "src/resolvers",
+      "src/services",
+      "src/models",
+      "src/db",
+      "src/context",
+      "tests/unit",
+      "tests/integration",
+      "docs/graphql"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      ".env.example": "backend",
+      "schema.graphql": "backend"
+    }
+  },
+  "serverless": {
+    "name": "Serverless (AWS Lambda)",
+    "description": "Serverless functions layout (AWS Lambda/Serverless Framework)",
+    "structure": [
+      "functions/auth",
+      "functions/api",
+      "shared",
+      "infrastructure",
+      "tests",
+      "docs"
+    ],
+    "files": {
+      "serverless.yml": "monorepo-root",
+      ".gitignore": "backend",
+      ".env.example": "backend"
+    }
+  },
+  "microservices": {
+    "name": "Microservices",
+    "description": "Microservices repository scaffold (services + infra)",
+    "structure": [
+      "services/auth",
+      "services/user",
+      "services/payments",
+      "services/gateway",
+      "infra/terraform",
+      "tools/scripts",
+      "docs/architecture",
+      "tests/integration"
+    ],
+    "files": {
+      ".gitignore": "monorepo",
+      "README.services.md": "monorepo-root"
+    }
+  },
+  "fullstack-mern": {
+    "name": "Fullstack MERN",
+    "description": "MongoDB / Express / React / Node fullstack app",
+    "structure": [
+      "client/src",
+      "client/public",
+      "server/src",
+      "server/src/controllers",
+      "server/src/models",
+      "server/src/routes",
+      "scripts",
+      "tests"
+    ],
+    "files": {
+      "client/.gitignore": "frontend",
+      "server/.gitignore": "backend",
+      "package.json": "monorepo-root",
+      ".env.example": "backend"
+    }
+  },
+  "infrastructure-terraform": {
+    "name": "Infrastructure (Terraform)",
+    "description": "Terraform layout for infra-as-code with modules",
+    "structure": [
+      "modules/network",
+      "modules/compute",
+      "environments/dev",
+      "environments/prod",
+      "scripts",
+      "docs/infra"
+    ],
+    "files": {
+      "backend.tf": "monorepo-root",
+      ".gitignore": "monorepo"
+    }
+  },
+  "cli-rust": {
+    "name": "CLI (Rust)",
+    "description": "Rust command-line application layout (src + examples + tests)",
+    "structure": [
+      "src",
+      "examples",
+      "benches",
+      "tests",
+      "docs"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      "Cargo.toml": "monorepo-root"
+    }
+  },
+  "python-data-science": {
+    "name": "Python Data Science",
+    "description": "Structure for data-science projects (notebooks, data, src)",
+    "structure": [
+      "data/raw",
+      "data/processed",
+      "notebooks",
+      "src",
+      "models",
+      "reports",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      "requirements.txt": "monorepo-root",
+      "environment.yml": "monorepo-root"
+    }
+  },
+  "nextjs-app": {
+    "name": "Next.js App Router",
+    "description": "Next.js 14+ with App Router and server components",
+    "structure": [
+      "app/(routes)",
+      "app/api",
+      "components/ui",
+      "components/shared",
+      "lib/utils",
+      "public/assets",
+      "styles",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      ".env.example": "frontend",
+      "next.config.js": "frontend"
+    }
+  },
+  "clean-architecture": {
+    "name": "Clean Architecture",
+    "description": "Hexagonal/Clean architecture with domain-driven design",
+    "structure": [
+      "src/domain/entities",
+      "src/domain/repositories",
+      "src/application/use-cases",
+      "src/infrastructure/database",
+      "src/infrastructure/http",
+      "src/presentation/controllers",
+      "tests/unit",
+      "tests/integration"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      ".env.example": "backend"
+    }
+  },
+  "event-driven": {
+    "name": "Event-Driven Architecture",
+    "description": "Event-driven system with message brokers and event handlers",
+    "structure": [
+      "src/events",
+      "src/handlers",
+      "src/publishers",
+      "src/consumers",
+      "src/infrastructure/messaging",
+      "src/models",
+      "tests",
+      "docs/event-schemas"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      ".env.example": "backend"
+    }
+  },
+  "ddd-bounded-contexts": {
+    "name": "Domain-Driven Design",
+    "description": "DDD with bounded contexts and aggregates",
+    "structure": [
+      "src/contexts/user-management",
+      "src/contexts/billing",
+      "src/contexts/inventory",
+      "src/shared/kernel",
+      "src/infrastructure",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      ".env.example": "backend"
+    }
+  },
+  "mobile-react-native": {
+    "name": "React Native Mobile",
+    "description": "Cross-platform mobile app with React Native",
+    "structure": [
+      "src/screens",
+      "src/components",
+      "src/navigation",
+      "src/services",
+      "src/hooks",
+      "src/utils",
+      "assets/images",
+      "assets/fonts",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      ".env.example": "frontend"
+    }
+  },
+  "flutter-app": {
+    "name": "Flutter Mobile App",
+    "description": "Flutter mobile application structure",
+    "structure": [
+      "lib/features",
+      "lib/core/theme",
+      "lib/core/utils",
+      "lib/data/models",
+      "lib/data/repositories",
+      "assets/images",
+      "test/unit",
+      "test/widget"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      "pubspec.yaml": "frontend"
+    }
+  },
+  "kubernetes-app": {
+    "name": "Kubernetes Application",
+    "description": "Containerized app with Kubernetes manifests",
+    "structure": [
+      "src",
+      "k8s/base",
+      "k8s/overlays/dev",
+      "k8s/overlays/prod",
+      "docker",
+      "helm/charts",
+      "scripts",
+      "docs"
+    ],
+    "files": {
+      "Dockerfile": "backend",
+      ".gitignore": "backend",
+      "skaffold.yaml": "backend"
+    }
+  },
+  "nx-monorepo": {
+    "name": "Nx Monorepo",
+    "description": "Nx workspace with apps and libraries",
+    "structure": [
+      "apps/web",
+      "apps/mobile",
+      "apps/api",
+      "libs/shared/ui",
+      "libs/shared/data-access",
+      "libs/shared/utils",
+      "tools/generators"
+    ],
+    "files": {
+      ".gitignore": "monorepo",
+      "nx.json": "monorepo-root",
+      "package.json": "monorepo-root"
+    }
+  },
+  "turborepo": {
+    "name": "Turborepo Monorepo",
+    "description": "High-performance monorepo with Turborepo",
+    "structure": [
+      "apps/web",
+      "apps/docs",
+      "packages/ui",
+      "packages/config",
+      "packages/tsconfig",
+      "turbo/generators"
+    ],
+    "files": {
+      ".gitignore": "monorepo",
+      "turbo.json": "monorepo-root",
+      "package.json": "monorepo-root"
+    }
+  },
+  "electron-desktop": {
+    "name": "Electron Desktop App",
+    "description": "Cross-platform desktop application with Electron",
+    "structure": [
+      "src/main",
+      "src/renderer",
+      "src/preload",
+      "assets",
+      "build",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      "package.json": "monorepo-root"
+    }
+  },
+  "fastapi-backend": {
+    "name": "FastAPI Backend",
+    "description": "Modern Python API with FastAPI",
+    "structure": [
+      "app/api/endpoints",
+      "app/core",
+      "app/models",
+      "app/schemas",
+      "app/services",
+      "app/db",
+      "tests",
+      "alembic/versions"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      "requirements.txt": "monorepo-root",
+      ".env.example": "backend"
+    }
+  },
+  "django-backend": {
+    "name": "Django Backend",
+    "description": "Full-featured Django web application",
+    "structure": [
+      "apps/users",
+      "apps/products",
+      "config/settings",
+      "static",
+      "media",
+      "templates",
+      "tests",
+      "docs"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      "requirements.txt": "monorepo-root",
+      "manage.py": "backend"
+    }
+  },
+  "go-microservice": {
+    "name": "Go Microservice",
+    "description": "Go microservice with clean architecture",
+    "structure": [
+      "cmd/api",
+      "internal/handlers",
+      "internal/services",
+      "internal/repositories",
+      "internal/models",
+      "pkg/logger",
+      "pkg/middleware",
+      "tests",
+      "docs"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      "go.mod": "backend",
+      ".env.example": "backend"
+    }
+  },
+  "spring-boot": {
+    "name": "Spring Boot API",
+    "description": "Java Spring Boot REST API",
+    "structure": [
+      "src/main/java/com/example/controllers",
+      "src/main/java/com/example/services",
+      "src/main/java/com/example/repositories",
+      "src/main/java/com/example/models",
+      "src/main/resources",
+      "src/test/java"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      "pom.xml": "backend",
+      "application.properties": "backend"
+    }
+  },
+  "nestjs-backend": {
+    "name": "NestJS Backend",
+    "description": "Enterprise Node.js framework with TypeScript",
+    "structure": [
+      "src/modules/auth",
+      "src/modules/users",
+      "src/common/guards",
+      "src/common/interceptors",
+      "src/database",
+      "test/unit",
+      "test/e2e"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      ".env.example": "backend",
+      "nest-cli.json": "backend"
+    }
+  },
+  "vue-frontend": {
+    "name": "Vue.js Frontend",
+    "description": "Vue 3 application with Composition API",
+    "structure": [
+      "src/components",
+      "src/views",
+      "src/composables",
+      "src/stores",
+      "src/router",
+      "src/assets",
+      "public",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      ".env.example": "frontend"
+    }
+  },
+  "angular-frontend": {
+    "name": "Angular Frontend",
+    "description": "Enterprise Angular application",
+    "structure": [
+      "src/app/core",
+      "src/app/features",
+      "src/app/shared",
+      "src/assets",
+      "src/environments",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      "angular.json": "frontend"
+    }
+  },
+  "svelte-frontend": {
+    "name": "SvelteKit Frontend",
+    "description": "Modern Svelte framework with SvelteKit",
+    "structure": [
+      "src/routes",
+      "src/lib/components",
+      "src/lib/stores",
+      "src/lib/utils",
+      "static",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      ".env.example": "frontend",
+      "svelte.config.js": "frontend"
+    }
+  },
+  "machine-learning": {
+    "name": "ML/AI Project",
+    "description": "Machine learning project with MLOps structure",
+    "structure": [
+      "data/raw",
+      "data/processed",
+      "notebooks",
+      "src/data",
+      "src/models",
+      "src/features",
+      "src/evaluation",
+      "models/trained",
+      "experiments",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      "requirements.txt": "monorepo-root",
+      "setup.py": "backend"
+    }
+  },
+  "chrome-extension": {
+    "name": "Chrome Extension",
+    "description": "Browser extension with manifest V3",
+    "structure": [
+      "src/background",
+      "src/content",
+      "src/popup",
+      "src/options",
+      "assets/icons",
+      "public"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      "manifest.json": "frontend"
+    }
+  },
+  "blockchain-dapp": {
+    "name": "Blockchain DApp",
+    "description": "Decentralized application with smart contracts",
+    "structure": [
+      "contracts",
+      "scripts",
+      "test",
+      "frontend/src",
+      "frontend/public",
+      "deployments"
+    ],
+    "files": {
+      ".gitignore": "frontend",
+      "hardhat.config.js": "backend"
+    }
+  },
+  "api-gateway": {
+    "name": "API Gateway",
+    "description": "API gateway with rate limiting and routing",
+    "structure": [
+      "src/routes",
+      "src/middleware/auth",
+      "src/middleware/rate-limit",
+      "src/services/proxy",
+      "src/config",
+      "tests",
+      "docs/api"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      ".env.example": "backend"
+    }
+  },
+  "cqrs-event-sourcing": {
+    "name": "CQRS + Event Sourcing",
+    "description": "Command Query Responsibility Segregation with event sourcing",
+    "structure": [
+      "src/commands",
+      "src/queries",
+      "src/events",
+      "src/projections",
+      "src/aggregates",
+      "src/infrastructure/event-store",
+      "tests"
+    ],
+    "files": {
+      ".gitignore": "backend",
+      ".env.example": "backend"
+    }
+  },
+  "graphql-federation": {
+    "name": "GraphQL Federation",
+    "description": "Federated GraphQL gateway with multiple subgraphs",
+    "structure": [
+      "gateway",
+      "services/users",
+      "services/products",
+      "services/orders",
+      "shared/types",
+      "tests",
+      "docs"
+    ],
+    "files": {
+      ".gitignore": "monorepo",
+      "supergraph.yaml": "backend"
+    }
+  }
+}
